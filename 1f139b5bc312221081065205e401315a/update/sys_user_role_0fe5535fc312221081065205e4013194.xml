@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Basic role for patients to access and manage their records.</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>Healthcare_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix/>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-28 11:07:44</sys_created_on>
+        <sys_id>0fe5535fc312221081065205e4013194</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Healthcare_user</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_update_name>sys_user_role_0fe5535fc312221081065205e4013194</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-28 11:07:44</sys_updated_on>
+    </sys_user_role>
+</record_update>
