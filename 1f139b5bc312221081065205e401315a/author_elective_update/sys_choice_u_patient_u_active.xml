@@ -19,6 +19,25 @@
             <dependent_value/>
             <element>u_active</element>
             <hint/>
+            <inactive>true</inactive>
+            <label>Choice 3</label>
+            <language>en</language>
+            <name>u_patient</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-28 12:16:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 10:49:22</sys_updated_on>
+            <value>Choice 3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_active</element>
+            <hint/>
             <inactive>false</inactive>
             <label>True</label>
             <language>en</language>
@@ -29,9 +48,9 @@
             <sys_created_on>2025-06-28 12:16:32</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 12:16:32</sys_updated_on>
+            <sys_updated_on>2025-07-01 10:48:52</sys_updated_on>
             <value>true</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -48,29 +67,10 @@
             <sys_created_on>2025-06-28 12:16:32</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 12:16:32</sys_updated_on>
+            <sys_updated_on>2025-07-01 10:48:52</sys_updated_on>
             <value>false</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_active</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Choice 3</label>
-            <language>en</language>
-            <name>u_patient</name>
-            <sequence>2</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-28 12:16:32</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-28 12:16:32</sys_updated_on>
-            <value>Choice 3</value>
         </sys_choice>
     </sys_choice>
 </record_update>

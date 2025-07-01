@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="64391753c352221081065205e401315c" extends="task" label="Patient" max_length="40" name="u_patient" type="collection">
+    <element audit="true" db_object_id="64391753c352221081065205e401315c" extends="task" label="Patient" max_length="40" name="u_patient" type="collection">
+        <element label="Emergency_Contact" max_length="40" name="u_emergency_contact" type="phone_number_e164"/>
         <element attributes="edge_encryption_enabled=true" label="Address" mandatory="true" max_length="1000" name="u_address" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Active" max_length="40" name="u_active" type="string">
+        <element attributes="edge_encryption_enabled=true" label="Work_Notes" max_length="4000" name="u_work_notes" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="true" label="Active" max_length="40" name="u_active" type="string">
             <choice>
-                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="0" value="Choice 3"/>
                 <element inactive_on_update="false" label="False" sequence="1" value="false"/>
                 <element inactive_on_update="false" label="True" sequence="0" value="true"/>
             </choice>
