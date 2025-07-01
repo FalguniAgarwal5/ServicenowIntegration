@@ -12,11 +12,26 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Last_Name" mandatory="true" max_length="40" name="u_last_name" type="string"/>
         <element label="Contact_Number" mandatory="true" max_length="40" name="u_contact_number" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" mandatory="true" max_length="40" name="u_gender" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+                <element inactive_on_update="false" label="Female" sequence="1" value="female"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="other"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" mandatory="true" max_length="40" name="u_choice_4" type="string">
             <choice>
                 <element inactive_on_update="false" label="Female" sequence="0" value="Choice 1"/>
                 <element inactive_on_update="false" label="Male" sequence="1" value="Choice 2"/>
                 <element inactive_on_update="false" label="Other" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in progress"/>
+                <element inactive_on_update="false" label="Discharged" sequence="3" value="discharged"/>
+                <element inactive_on_update="false" label="Under Treatment" sequence="2" value="under treatment"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Email" mandatory="true" max_length="40" name="u_email" type="string"/>

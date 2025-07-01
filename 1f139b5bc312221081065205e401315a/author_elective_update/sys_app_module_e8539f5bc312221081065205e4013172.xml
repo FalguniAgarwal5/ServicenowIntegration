@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Healthcare Management Application">2853db5bc312221081065205e4013130</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Open - Unassigned</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>task</name>
+        <order>4</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>active=true^assigned_toISEMPTY^EQ</query>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-28 10:54:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e8539f5bc312221081065205e4013172</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open - Unassigned</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_update_name>sys_app_module_e8539f5bc312221081065205e4013172</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-28 10:54:48</sys_updated_on>
+        <timeline_page/>
+        <title>Open - Unassigned</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</application>
+        <file_path/>
+        <instance_id>8ce001cedb35f154199b1729139619bc</instance_id>
+        <instance_name>dev183344</instance_name>
+        <name>sys_app_module_e8539f5bc312221081065205e4013172</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Healthcare Management Application">2853db5bc312221081065205e4013130</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Open - Unassigned</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>task</name><order>4</order><override_menu_roles>false</override_menu_roles><query>active=true^assigned_toISEMPTY^EQ</query><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-28 10:54:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e8539f5bc312221081065205e4013172</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Open - Unassigned</sys_name><sys_overrides/><sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package><sys_policy/><sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope><sys_update_name>sys_app_module_e8539f5bc312221081065205e4013172</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-28 10:54:48</sys_updated_on><timeline_page/><title>Open - Unassigned</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>900446598</payload_hash>
+        <record_name>Open - Unassigned</record_name>
+        <reverted_from/>
+        <source>f34e42bf78a022104f3459503ff42ae0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-28 10:54:48</sys_created_on>
+        <sys_id>68539f5bc312221081065205e4013174</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197b62cf1d90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-28 10:54:48</sys_updated_on>
+        <type>Module</type>
+        <update_guid>6c539f5bb6122210e4ccc5416b880e73</update_guid>
+        <update_guid_history>6c539f5bb6122210e4ccc5416b880e73:900446598</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Open - Unassigned">975d8f10c3aa261081065205e4013132</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-01 13:02:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>397b4a288f1d46c58df95bc27afd6aa1</sys_id>
+        <sys_metadata>e8539f5bc312221081065205e4013172</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open - Unassigned</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_scope_delete display_value="">0bd21deccf514f849b36aaf49c816110</sys_scope_delete>
+        <sys_update_name>sys_app_module_e8539f5bc312221081065205e4013172</sys_update_name>
+        <sys_update_version display_value="sys_app_module_e8539f5bc312221081065205e4013172">68539f5bc312221081065205e4013174</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-01 13:02:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
