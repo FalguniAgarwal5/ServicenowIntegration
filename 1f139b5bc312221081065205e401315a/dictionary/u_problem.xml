@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f930f88cc3eaa21081065205e40131d9" label="Problem" max_length="40" name="u_problem" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Process" max_length="40" name="u_process" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in progress"/>
+                <element inactive_on_update="false" label="On Hold" sequence="2" value="on hold"/>
+                <element inactive_on_update="false" label="Complete" sequence="3" value="complete"/>
+            </choice>
+        </element>
+    </element>
+</database>

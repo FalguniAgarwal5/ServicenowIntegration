@@ -47,7 +47,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-30 07:02:02</sys_created_on>
-        <sys_id>e231bc00c32ea21081065205e40131a0</sys_id>
         <sys_name>Process</sys_name>
         <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
         <sys_policy/>

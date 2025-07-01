@@ -1,61 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="u_process" table="u_problem" version="3">
+    <sys_choice action="INSERT_OR_UPDATE" field="u_process" table="u_issues" version="3">
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>u_process</element>
-            <name>u_problem</name>
+            <name>u_issues</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-30 07:02:03</sys_created_on>
-            <sys_id>ba31fc00c32ea21081065205e4013185</sys_id>
+            <sys_created_on>2025-06-30 06:40:08</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>u_process</sys_name>
             <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
             <sys_policy/>
             <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
-            <sys_update_name>sys_choice_u_problem_u_process</sys_update_name>
+            <sys_update_name>sys_choice_u_issues_u_process</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-30 07:02:03</sys_updated_on>
+            <sys_updated_on>2025-06-30 06:40:08</sys_updated_on>
         </sys_choice_set>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_process</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>New</label>
-            <language>en</language>
-            <name>u_problem</name>
-            <sequence>0</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-30 07:02:03</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>7631fc00c32ea21081065205e4013185</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-30 07:02:03</sys_updated_on>
-            <value>new</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>u_process</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>In Progress</label>
-            <language>en</language>
-            <name>u_problem</name>
-            <sequence>1</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-30 07:02:03</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>7e31fc00c32ea21081065205e4013186</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-30 07:02:03</sys_updated_on>
-            <value>in progress</value>
-        </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>u_process</element>
@@ -63,17 +22,16 @@
             <inactive>false</inactive>
             <label>On Hold</label>
             <language>en</language>
-            <name>u_problem</name>
-            <sequence>2</sequence>
+            <name>u_issues</name>
+            <sequence>0</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-30 07:02:03</sys_created_on>
+            <sys_created_on>2025-06-30 06:40:08</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>ba31fc00c32ea21081065205e4013187</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-30 07:02:03</sys_updated_on>
+            <sys_updated_on>2025-06-30 06:40:08</sys_updated_on>
             <value>on hold</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -83,18 +41,55 @@
             <inactive>false</inactive>
             <label>Complete</label>
             <language>en</language>
-            <name>u_problem</name>
+            <name>u_issues</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-30 06:40:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-30 06:40:08</sys_updated_on>
+            <value>complete</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_process</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Progress</label>
+            <language>en</language>
+            <name>u_issues</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-30 06:40:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-30 06:40:08</sys_updated_on>
+            <value>in progress</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_process</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New</label>
+            <language>en</language>
+            <name>u_issues</name>
             <sequence>3</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-30 07:02:03</sys_created_on>
+            <sys_created_on>2025-06-30 06:41:50</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>f631fc00c32ea21081065205e4013188</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-30 07:02:03</sys_updated_on>
-            <value>complete</value>
+            <sys_updated_on>2025-06-30 06:41:50</sys_updated_on>
+            <value>new</value>
         </sys_choice>
     </sys_choice>
 </record_update>
