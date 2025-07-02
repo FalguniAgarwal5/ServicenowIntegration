@@ -1,72 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Insurance Table" section_id="9f0b075cc36a261081065205e4013147" sys_domain="global" table="u_insurance" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 12:57:21</sys_created_on>
-            <sys_id>0d2ccb10c3aa261081065205e4013198</sys_id>
+            <sys_created_on>2025-07-01 17:48:23</sys_created_on>
+            <sys_id>98ceccacc3ae261081065205e4013108</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Process Flow">03dd0c6cc3ae261081065205e40131b0</sys_ui_formatter>
+            <sys_ui_section caption="Insurance Table" display_value="Insurance Table" name="u_insurance" sys_domain="global" view="Default view">9f0b075cc36a261081065205e4013147</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 17:48:23</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 17:48:23</sys_created_on>
+            <sys_id>50ceccacc3ae261081065205e4013109</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Insurance Table" display_value="Insurance Table" name="u_insurance" sys_domain="global" view="Default view">9f0b075cc36a261081065205e4013147</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 12:57:21</sys_updated_on>
+            <sys_updated_on>2025-07-01 17:48:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_patient_id</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 12:57:21</sys_created_on>
-            <sys_id>812ccb10c3aa261081065205e4013199</sys_id>
+            <sys_created_on>2025-07-01 17:48:23</sys_created_on>
+            <sys_id>d4ceccacc3ae261081065205e4013109</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Insurance Table" display_value="Insurance Table" name="u_insurance" sys_domain="global" view="Default view">9f0b075cc36a261081065205e4013147</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 12:57:21</sys_updated_on>
+            <sys_updated_on>2025-07-01 17:48:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_provider</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 12:57:21</sys_created_on>
-            <sys_id>092ccb10c3aa261081065205e4013199</sys_id>
+            <sys_created_on>2025-07-01 17:48:23</sys_created_on>
+            <sys_id>5cceccacc3ae261081065205e4013109</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Insurance Table" display_value="Insurance Table" name="u_insurance" sys_domain="global" view="Default view">9f0b075cc36a261081065205e4013147</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 12:57:21</sys_updated_on>
+            <sys_updated_on>2025-07-01 17:48:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_policy_number</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 12:57:21</sys_created_on>
-            <sys_id>8d2ccb10c3aa261081065205e4013199</sys_id>
+            <sys_created_on>2025-07-01 17:48:23</sys_created_on>
+            <sys_id>d0ceccacc3ae261081065205e401310a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Insurance Table" display_value="Insurance Table" name="u_insurance" sys_domain="global" view="Default view">9f0b075cc36a261081065205e4013147</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 12:57:21</sys_updated_on>
+            <sys_updated_on>2025-07-01 17:48:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_coverage_details</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 12:57:21</sys_created_on>
-            <sys_id>052ccb10c3aa261081065205e401319a</sys_id>
+            <sys_created_on>2025-07-01 17:48:23</sys_created_on>
+            <sys_id>58ceccacc3ae261081065205e401310a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Insurance Table" display_value="Insurance Table" name="u_insurance" sys_domain="global" view="Default view">9f0b075cc36a261081065205e4013147</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 12:57:21</sys_updated_on>
+            <sys_updated_on>2025-07-01 17:48:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_status</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 17:48:23</sys_created_on>
+            <sys_id>dcceccacc3ae261081065205e401310a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Insurance Table" display_value="Insurance Table" name="u_insurance" sys_domain="global" view="Default view">9f0b075cc36a261081065205e4013147</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 17:48:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

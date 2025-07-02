@@ -1,72 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Room Details" section_id="001787d4c36a261081065205e40131b3" sys_domain="global" table="u_room" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_number</element>
+            <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 12:40:45</sys_created_on>
-            <sys_id>ca588bd8c36a261081065205e4013167</sys_id>
+            <sys_created_on>2025-07-01 18:46:02</sys_created_on>
+            <sys_id>bcfb58acc3ee261081065205e401316f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Process Flow">1e159064c3ee261081065205e4013137</sys_ui_formatter>
+            <sys_ui_section caption="Room Details" display_value="Room Details" name="u_room" sys_domain="global" view="Default view">001787d4c36a261081065205e40131b3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 18:46:02</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_number</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 18:46:02</sys_created_on>
+            <sys_id>b8fb58acc3ee261081065205e4013170</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Room Details" display_value="Room Details" name="u_room" sys_domain="global" view="Default view">001787d4c36a261081065205e40131b3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 12:40:45</sys_updated_on>
+            <sys_updated_on>2025-07-01 18:46:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_ward_id</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 12:40:45</sys_created_on>
-            <sys_id>42588bd8c36a261081065205e4013168</sys_id>
+            <sys_created_on>2025-07-01 18:46:02</sys_created_on>
+            <sys_id>30fb58acc3ee261081065205e4013171</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Room Details" display_value="Room Details" name="u_room" sys_domain="global" view="Default view">001787d4c36a261081065205e40131b3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 12:40:45</sys_updated_on>
+            <sys_updated_on>2025-07-01 18:46:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_room_number</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 12:40:45</sys_created_on>
-            <sys_id>c6588bd8c36a261081065205e4013168</sys_id>
+            <sys_created_on>2025-07-01 18:46:02</sys_created_on>
+            <sys_id>b4fb58acc3ee261081065205e4013171</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Room Details" display_value="Room Details" name="u_room" sys_domain="global" view="Default view">001787d4c36a261081065205e40131b3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 12:40:45</sys_updated_on>
+            <sys_updated_on>2025-07-01 18:46:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_bed_count</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 12:40:45</sys_created_on>
-            <sys_id>4e588bd8c36a261081065205e4013168</sys_id>
+            <sys_created_on>2025-07-01 18:46:02</sys_created_on>
+            <sys_id>3cfb58acc3ee261081065205e4013171</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Room Details" display_value="Room Details" name="u_room" sys_domain="global" view="Default view">001787d4c36a261081065205e40131b3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 12:40:45</sys_updated_on>
+            <sys_updated_on>2025-07-01 18:46:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_occupied_beds</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 12:40:45</sys_created_on>
-            <sys_id>c2588bd8c36a261081065205e4013169</sys_id>
+            <sys_created_on>2025-07-01 18:46:02</sys_created_on>
+            <sys_id>b0fb58acc3ee261081065205e4013172</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Room Details" display_value="Room Details" name="u_room" sys_domain="global" view="Default view">001787d4c36a261081065205e40131b3</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 12:40:45</sys_updated_on>
+            <sys_updated_on>2025-07-01 18:46:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_statu</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-01 18:46:02</sys_created_on>
+            <sys_id>38fb58acc3ee261081065205e4013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Room Details" display_value="Room Details" name="u_room" sys_domain="global" view="Default view">001787d4c36a261081065205e40131b3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-01 18:46:02</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

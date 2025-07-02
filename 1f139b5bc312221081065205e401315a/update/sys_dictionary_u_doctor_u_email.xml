@@ -2,10 +2,10 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="u_email" table="u_doctor">
         <active>true</active>
         <array>false</array>
-        <attributes>edge_encryption_enabled=true</attributes>
+        <attributes>edge_encryption_enabled=true,</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Email</column_label>
@@ -53,10 +53,10 @@
         <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
         <sys_update_name>sys_dictionary_u_doctor_u_email</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-01 11:17:32</sys_updated_on>
+        <sys_updated_on>2025-07-02 05:24:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
-        <unique>false</unique>
+        <unique>true</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>

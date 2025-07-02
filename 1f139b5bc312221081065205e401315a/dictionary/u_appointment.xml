@@ -11,12 +11,13 @@
                 <element inactive_on_update="false" label="ETC" sequence="3" value="etc"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
             <choice>
-                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
-                <element inactive_on_update="false" label="Scheduled" sequence="0" value="scheduled"/>
-                <element inactive_on_update="false" label="Confirmed" sequence="1" value="confirmed"/>
-                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="1" value="scheduled"/>
+                <element inactive_on_update="false" label="Confirmed" sequence="2" value="confirmed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
             </choice>
         </element>
     </element>
