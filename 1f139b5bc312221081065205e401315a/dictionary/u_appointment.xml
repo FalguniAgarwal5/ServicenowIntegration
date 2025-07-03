@@ -2,7 +2,7 @@
     <element audit="true" db_object_id="2f667254c32a261081065205e4013185" extends="task" label="Appointment" max_length="40" name="u_appointment" type="collection">
         <element attributes="encode_utf8=false" label="Doctor" mandatory="true" max_length="32" name="u_doctor" reference="u_doctor" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Appointment_Date" mandatory="true" max_length="40" name="u_appointment_date" type="glide_date_time"/>
-        <element attributes="encode_utf8=false" label="Patient_ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_doctor" type="reference"/>
+        <element attributes="encode_utf8=false" label="Patient_ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Department" mandatory="true" max_length="40" name="u_department" type="string">
             <choice>
                 <element inactive_on_update="false" label="Pediatrics" sequence="2" value="pediatrics"/>
