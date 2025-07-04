@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Healthcare Management Application">2853db5bc312221081065205e4013130</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Patients</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-29 19:10:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>18ed4af3c3de621081065205e401311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Patients</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_update_name>sys_app_module_18ed4af3c3de621081065205e401311c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-29 19:10:27</sys_updated_on>
+        <timeline_page/>
+        <title>Patients</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</application>
+        <file_path/>
+        <instance_id>8ce001cedb35f154199b1729139619bc</instance_id>
+        <instance_name>dev183344</instance_name>
+        <name>sys_app_module_18ed4af3c3de621081065205e401311c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Healthcare Management Application">2853db5bc312221081065205e4013130</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>SEPARATOR</link_type><map_page/><mobile_title>Patients</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-29 19:10:27</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>18ed4af3c3de621081065205e401311c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Patients</sys_name><sys_overrides/><sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package><sys_policy/><sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope><sys_update_name>sys_app_module_18ed4af3c3de621081065205e401311c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-29 19:10:27</sys_updated_on><timeline_page/><title>Patients</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1395581845</payload_hash>
+        <record_name>Patients</record_name>
+        <reverted_from/>
+        <source>f34e42bf78a022104f3459503ff42ae0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-29 19:10:27</sys_created_on>
+        <sys_id>c75e8277c312a21081065205e401313b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197bd1916130000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-29 19:10:27</sys_updated_on>
+        <type>Module</type>
+        <update_guid>8b5e8277c612a210e5404c801c47e93a</update_guid>
+        <update_guid_history>8b5e8277c612a210e5404c801c47e93a:1395581845</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Patients">c568d199c32ee21081065205e40131cc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 07:05:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>625477a4f2f04df49bf25ab79083e110</sys_id>
+        <sys_metadata>18ed4af3c3de621081065205e401311c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Patients</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_scope_delete display_value="">0bd21deccf514f849b36aaf49c816110</sys_scope_delete>
+        <sys_update_name>sys_app_module_18ed4af3c3de621081065205e401311c</sys_update_name>
+        <sys_update_version display_value="sys_app_module_18ed4af3c3de621081065205e401311c">c75e8277c312a21081065205e401313b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 07:05:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
