@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Healthcare Management Application">2853db5bc312221081065205e4013130</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Billing Reports</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>6000</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>https://www.google.co.in/</query>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>Healthcare_Supervisor,Healthcare_Admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-05 18:22:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>685cf07dc362a61081065205e40131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Billing Reports</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_update_name>sys_app_module_685cf07dc362a61081065205e40131bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-05 18:22:19</sys_updated_on>
+        <timeline_page/>
+        <title>Billing Reports</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</application>
+        <file_path/>
+        <instance_id>8ce001cedb35f154199b1729139619bc</instance_id>
+        <instance_name>dev183344</instance_name>
+        <name>sys_app_module_685cf07dc362a61081065205e40131bb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Healthcare Management Application">2853db5bc312221081065205e4013130</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>DIRECT</link_type><map_page/><mobile_title>Billing Reports</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>6000</order><override_menu_roles>false</override_menu_roles><query>https://www.google.co.in/</query><report/><require_confirmation>true</require_confirmation><roles>Healthcare_Supervisor,Healthcare_Admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-05 18:22:19</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>685cf07dc362a61081065205e40131bb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Billing Reports</sys_name><sys_overrides/><sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package><sys_policy/><sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope><sys_update_name>sys_app_module_685cf07dc362a61081065205e40131bb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-05 18:22:19</sys_updated_on><timeline_page/><title>Billing Reports</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1990955960</payload_hash>
+        <record_name>Billing Reports</record_name>
+        <reverted_from/>
+        <source>f94fad88c322e21081065205e4013186</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-05 18:22:19</sys_created_on>
+        <sys_id>10ecfc7dc362a61081065205e4013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197dbd32c020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-05 18:22:19</sys_updated_on>
+        <type>Module</type>
+        <update_guid>14ecfc7def62a61012666f90f775eb0f</update_guid>
+        <update_guid_history>14ecfc7def62a61012666f90f775eb0f:1990955960</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Billing Reports">a48df4bdc362a61081065205e4013196</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-05 18:25:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>017a69eff019401080040a33042b06c9</sys_id>
+        <sys_metadata>685cf07dc362a61081065205e40131bb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Billing Reports</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_scope_delete display_value="">0bd21deccf514f849b36aaf49c816110</sys_scope_delete>
+        <sys_update_name>sys_app_module_685cf07dc362a61081065205e40131bb</sys_update_name>
+        <sys_update_version display_value="sys_app_module_685cf07dc362a61081065205e40131bb">10ecfc7dc362a61081065205e4013110</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-05 18:25:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

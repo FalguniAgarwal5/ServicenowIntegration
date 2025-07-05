@@ -13,7 +13,7 @@
         <mobile_title>Prescribe Medication</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>u_medication</name>
-        <order>1000</order>
+        <order>100</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fe9d9dddc32ee21081065205e40131a5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Prescribe Medication</sys_name>
         <sys_overrides/>
         <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
         <sys_update_name>sys_app_module_fe9d9dddc32ee21081065205e40131a5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-04 07:30:01</sys_updated_on>
+        <sys_updated_on>2025-07-05 18:48:58</sys_updated_on>
         <timeline_page/>
         <title>Prescribe Medication</title>
         <uncancelable>false</uncancelable>
