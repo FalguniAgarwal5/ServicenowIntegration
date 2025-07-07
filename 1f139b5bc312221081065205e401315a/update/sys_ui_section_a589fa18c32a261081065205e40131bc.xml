@@ -4,27 +4,41 @@
             <element>work_notes</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 11:36:03</sys_created_on>
-            <sys_id>56893e18c32a261081065205e401319d</sys_id>
+            <sys_created_on>2025-07-07 11:54:49</sys_created_on>
+            <sys_id>6b577d1ec36e2a1081065205e40131f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Notes" display_value="Notes" name="u_appointment" sys_domain="global" view="Default view">a589fa18c32a261081065205e40131bc</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 11:36:03</sys_updated_on>
+            <sys_updated_on>2025-07-07 11:54:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-07 11:54:49</sys_created_on>
+            <sys_id>37577d1ec36e2a1081065205e40131fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Notes" display_value="Notes" name="u_appointment" sys_domain="global" view="Default view">a589fa18c32a261081065205e40131bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-07 11:54:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>activity.xml</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 11:36:03</sys_created_on>
-            <sys_id>da893e18c32a261081065205e401319d</sys_id>
+            <sys_created_on>2025-07-07 11:54:49</sys_created_on>
+            <sys_id>bb577d1ec36e2a1081065205e40131fa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
             <sys_ui_section caption="Notes" display_value="Notes" name="u_appointment" sys_domain="global" view="Default view">a589fa18c32a261081065205e40131bc</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 11:36:03</sys_updated_on>
+            <sys_updated_on>2025-07-07 11:54:49</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>

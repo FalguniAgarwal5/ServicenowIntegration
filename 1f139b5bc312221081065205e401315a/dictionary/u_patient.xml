@@ -34,6 +34,7 @@
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
             </choice>
         </element>
+        <element label="VIP" max_length="40" name="u_vip" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="Email" mandatory="true" max_length="40" name="u_email" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Date_Of_Birth" mandatory="true" max_length="40" name="u_date_birth" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="First_Name" mandatory="true" max_length="40" name="u_first_name" type="string"/>
