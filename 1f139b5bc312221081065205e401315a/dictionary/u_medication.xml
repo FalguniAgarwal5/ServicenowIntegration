@@ -12,9 +12,16 @@
         <element attributes="edge_encryption_enabled=true" label="End_Date" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
         <element attributes="encode_utf8=false" label="Prescribing Doctor" mandatory="true" max_length="32" name="u_prescribing_doctor" reference="u_doctor" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Dosage" mandatory="true" max_length="1000" name="u_dosage" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+            </choice>
+        </element>
         <element attributes="encode_utf8=false" label="Patient_ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Start_Date" mandatory="true" max_length="40" name="u_start_date" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Frequency" mandatory="true" max_length="40" name="u_frequency" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="once daily" label="Frequency" mandatory="true" max_length="40" name="u_frequency" type="string">
             <choice>
                 <element inactive_on_update="false" label="Thrice Daily" sequence="2" value="thrice daily"/>
                 <element inactive_on_update="false" label="Once Daily" sequence="0" value="once daily"/>
@@ -22,5 +29,6 @@
                 <element inactive_on_update="false" label="ETC" sequence="3" value="etc"/>
             </choice>
         </element>
+        <element label="Total_Dosage" max_length="40" name="u_total_dosage" type="integer"/>
     </element>
 </database>
