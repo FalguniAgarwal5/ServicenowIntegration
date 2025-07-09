@@ -4,13 +4,13 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 18:08:55</sys_created_on>
-            <sys_id>41735824c3ee261081065205e40131e3</sys_id>
+            <sys_created_on>2025-07-09 12:06:56</sys_created_on>
+            <sys_id>ac5dc483c3622e1081065205e401312c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Process Flow">b86150acc3ae261081065205e401317d</sys_ui_formatter>
             <sys_ui_section caption="Billing Details" display_value="Billing Details" name="u_billing" sys_domain="global" view="Default view">ea988f58c36a261081065205e40131f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 18:08:55</sys_updated_on>
+            <sys_updated_on>2025-07-09 12:06:56</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>number</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 18:08:55</sys_created_on>
-            <sys_id>4d735824c3ee261081065205e40131e3</sys_id>
+            <sys_created_on>2025-07-09 12:06:56</sys_created_on>
+            <sys_id>a85dc483c3622e1081065205e401312d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Billing Details" display_value="Billing Details" name="u_billing" sys_domain="global" view="Default view">ea988f58c36a261081065205e40131f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 18:08:55</sys_updated_on>
+            <sys_updated_on>2025-07-09 12:06:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_patient_id</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 18:08:55</sys_created_on>
-            <sys_id>c1735824c3ee261081065205e40131e4</sys_id>
+            <sys_created_on>2025-07-09 12:06:56</sys_created_on>
+            <sys_id>205dc483c3622e1081065205e401312e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Billing Details" display_value="Billing Details" name="u_billing" sys_domain="global" view="Default view">ea988f58c36a261081065205e40131f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 18:08:55</sys_updated_on>
+            <sys_updated_on>2025-07-09 12:06:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,41 +46,55 @@
             <element>u_appointment_id</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 18:08:55</sys_created_on>
-            <sys_id>49735824c3ee261081065205e40131e4</sys_id>
+            <sys_created_on>2025-07-09 12:06:56</sys_created_on>
+            <sys_id>a45dc483c3622e1081065205e401312e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Billing Details" display_value="Billing Details" name="u_billing" sys_domain="global" view="Default view">ea988f58c36a261081065205e40131f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 18:08:55</sys_updated_on>
+            <sys_updated_on>2025-07-09 12:06:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_due_date</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-09 12:06:56</sys_created_on>
+            <sys_id>2c5dc483c3622e1081065205e401312e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Billing Details" display_value="Billing Details" name="u_billing" sys_domain="global" view="Default view">ea988f58c36a261081065205e40131f0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-09 12:06:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_total_amount</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 18:08:55</sys_created_on>
-            <sys_id>cd735824c3ee261081065205e40131e4</sys_id>
+            <sys_created_on>2025-07-09 12:06:56</sys_created_on>
+            <sys_id>a05dc483c3622e1081065205e401312f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Billing Details" display_value="Billing Details" name="u_billing" sys_domain="global" view="Default view">ea988f58c36a261081065205e40131f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 18:08:55</sys_updated_on>
+            <sys_updated_on>2025-07-09 12:06:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_status</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 18:08:55</sys_created_on>
-            <sys_id>45735824c3ee261081065205e40131e5</sys_id>
+            <sys_created_on>2025-07-09 12:06:56</sys_created_on>
+            <sys_id>285dc483c3622e1081065205e401312f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Billing Details" display_value="Billing Details" name="u_billing" sys_domain="global" view="Default view">ea988f58c36a261081065205e40131f0</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 18:08:55</sys_updated_on>
+            <sys_updated_on>2025-07-09 12:06:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.InsuranceUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>InsuranceUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var InsuranceUtils = Class.create();
+InsuranceUtils.prototype = {
+    initialize: function() {
+	},
+
+    // a. Fetch insurance details by patient ID
+    getInsuranceByPatient: function(patientId) {
+        var result = [];
+        var insGR = new GlideRecord('u_insurance'); 
+        insGR.addQuery('u_patient_id', patientId); 
+        insGR.query();
+
+        while (insGR.next()) {
+            result.push({
+                insurance_id: insGR.getUniqueValue(),
+                provider: insGR.getDisplayValue('u_provider'),
+                policy_number: insGR.getDisplayValue('u_policy_number'),
+                status: insGR.getDisplayValue('u_status')
+            });
+        }
+
+        return result;
+    },
+
+    // b. Check if an insurance policy is active
+    isPolicyActive: function(policyId) {
+        var insGR = new GlideRecord('u_insurance');
+        insGR.addQuery('number', policyId);
+        insGR.query();
+
+        if (insGR.next()) {
+            var start = new GlideDate();
+            start.setValue(insGR.getValue('start_date'));
+
+            var end = new GlideDate();
+            end.setValue(insGR.getValue('end_date'));
+
+            var today = new GlideDate();
+
+            return today.onOrAfter(start) && today.onOrBefore(end);
+        }
+
+        return false;
+    },
+
+    // c. Fetch insurance policy by ID
+    getInsuranceById: function(policyId) {
+        var insGR = new GlideRecord('u_insurance');
+        insGR.addQuery('number', policyId);
+        insGR.query();
+
+        if (insGR.next()) {
+            return {
+                insurance_id: insGR.getUniqueValue(),
+                patient: insGR.getDisplayValue('u_patient_id'),
+                provider: insGR.getDisplayValue('u_provider'),
+                policy_number: insGR.getDisplayValue('u_policy_number'),
+                start_date: insGR.getDisplayValue('start_date'),
+                end_date: insGR.getDisplayValue('end_date'),
+                status: insGR.getDisplayValue('u_status')
+            };
+        }
+
+        return null;
+    },
+
+    // d. Fetch insurance policies by provider
+    getPoliciesByProvider: function(providerId) {
+        var result = [];
+        var insGR = new GlideRecord('u_insurance');
+        insGR.addQuery('provider', providerId);
+        insGR.query();
+
+        while (insGR.next()) {
+            result.push({
+                insurance_id: insGR.getUniqueValue(),
+                patient: insGR.getDisplayValue('patient'),
+                policy_number: insGR.getDisplayValue('policy_number'),
+                start_date: insGR.getDisplayValue('start_date'),
+                end_date: insGR.getDisplayValue('end_date'),
+                status: insGR.getDisplayValue('status')
+            });
+        }
+
+        return result;
+    },
+
+    
+
+    type: 'InsuranceUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 12:17:18</sys_created_on>
+        <sys_id>398d8883c3622e1081065205e4013158</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>InsuranceUtils</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_update_name>sys_script_include_398d8883c3622e1081065205e4013158</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 12:17:18</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>398d8883c3622e1081065205e4013158</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 12:17:17</sys_created_on>
+        <sys_id>c0bfcc43c3622e1081065205e40131f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 12:17:17</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
