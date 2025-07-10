@@ -53,9 +53,9 @@
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>u_patient_id</recipient_fields>
+        <recipient_fields>u_patient_id.u_email,u_patient_id</recipient_fields>
         <recipient_groups/>
-        <recipient_users/>
+        <recipient_users>a8f98bb0eb32010045e1a5115206fe3a,6816f79cc0a8016401c5a33be04be441</recipient_users>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
@@ -68,7 +68,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7f8f3003c3662e1081065205e40131b9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Appointment Confirmed - Notify Patient</sys_name>
         <sys_overrides/>
         <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
@@ -76,7 +76,7 @@
         <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
         <sys_update_name>sysevent_email_action_7f8f3003c3662e1081065205e40131b9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-09 17:06:01</sys_updated_on>
+        <sys_updated_on>2025-07-10 10:15:01</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

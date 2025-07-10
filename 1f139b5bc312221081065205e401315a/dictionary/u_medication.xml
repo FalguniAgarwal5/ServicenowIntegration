@@ -10,6 +10,14 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Medication_Name" mandatory="true" max_length="40" name="u_medication_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="End_Date" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Frequency" max_length="40" name="u_freq" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Twice Daily" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Thrice Daily" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="ETC" sequence="3" value="etc"/>
+                <element inactive_on_update="false" label="Once Daily" sequence="0" value="1"/>
+            </choice>
+        </element>
         <element attributes="encode_utf8=false" label="Prescribing Doctor" mandatory="true" max_length="32" name="u_prescribing_doctor" reference="u_doctor" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Dosage" mandatory="true" max_length="1000" name="u_dosage" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_1" type="string">
