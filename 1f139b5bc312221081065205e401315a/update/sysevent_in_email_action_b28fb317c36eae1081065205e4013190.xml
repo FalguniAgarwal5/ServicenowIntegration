@@ -14,42 +14,49 @@
         <order>-10</order>
         <reply_email/>
         <required_roles/>
-        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
-
-	(function runInboundEmailAction() {
+        <script><![CDATA[(function runAction(current, event, email, logger, classifier) {
+  try {
     var emailBody = email.body_text;
-
-    
-    var patientIdMatch = emailBody.match(/Patient ID:\s*(PAT\d+)/i);
-    var medicationNameMatch = emailBody.match(/Medication Name:\s*(.+)/i);
-    var dosageMatch = emailBody.match(/Dosage:\s*(.+)/i);
-    var frequencyMatch = emailBody.match(/Frequency:\s*(.+)/i);
-
-
-    if (!patientIdMatch || !medicationNameMatch || !dosageMatch || !frequencyMatch) {
-        gs.log("Medication Refill Request: Missing required data in email body.");
-        return;
+ 
+    var patientIdMatch = emailBody.match(/Patient Id\s*:\s*(PAT\d+)/i);
+    var medNameMatch = emailBody.match(/Medication Name\s*:\s*(.+)/i);
+    var dosageMatch = emailBody.match(/Dosage\s*:\s*(.+)/i);
+    var frequencyMatch = emailBody.match(/Frequency\s*:\s*(.+)/i);
+ 
+    if (!patientIdMatch || !medNameMatch || !dosageMatch || !frequencyMatch) {
+      gs.error("Medication refill data missing. Email Body: " + emailBody);
+      return;
     }
-
-    var patientId = patientIdMatch[1].trim();
-    var medicationName = medicationNameMatch[1].trim();
+ 
+    var patientId = patientIdMatch[1];
+    var medName = medNameMatch[1].trim();
     var dosage = dosageMatch[1].trim();
     var frequency = frequencyMatch[1].trim();
-
-    
-    var medGR = new GlideRecord('u_medication');
-    medGR.initialize();
-    medGR.u_patient_id = patientId; 
-    medGR.u_medication_name = medicationName;
-    medGR.u_dosage = dosage;
-    medGR.u_freq = frequency;
-    medGR.u_start_date = new GlideDateTime();
-    medGR.u_status = 'Prescribed'; 
-    medGR.insert();
-
-    gs.print("Medication Refill Request: New record created for patient ID " + patientId);
-})();
-
+ 
+    var patient = new GlideRecord('u_patient');
+    patient.addQuery('number', patientId);
+    patient.query();
+ 
+    if (!patient.next()) {
+      gs.error("Patient not found for ID: " + patientId);
+      return;
+    }
+ 
+    var newMed = new GlideRecord('u_medication');
+    newMed.initialize();
+    newMed.u_patient_id = patient.sys_id;
+    newMed.u_medication_name = medName;
+    newMed.u_dosage = dosage;
+    newMed.u_freq = frequency;
+    newMed.u_start_date = new GlideDateTime();
+    newMed.u_status = 'requested';
+    newMed.insert();
+ 
+    gs.info("Medication refill created for Patient ID: " + patientId);
+ 
+  } catch (e) {
+    gs.error("Error processing medication refill: " + e.message + "\nStack: " + e.stack);
+  }
 })(current, event, email, logger, classifier);]]></script>
         <stop_processing>false</stop_processing>
         <sys_class_name>sysevent_in_email_action</sys_class_name>
@@ -58,7 +65,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b28fb317c36eae1081065205e4013190</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Medication Refill Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
@@ -66,7 +73,7 @@
         <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
         <sys_update_name>sysevent_in_email_action_b28fb317c36eae1081065205e4013190</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-11 00:35:15</sys_updated_on>
+        <sys_updated_on>2025-07-13 19:42:35</sys_updated_on>
         <table>u_medication</table>
         <template/>
         <type>new</type>

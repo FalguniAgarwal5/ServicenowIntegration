@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Get Patient Info</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    if (!g_form.isNewRecord()) {
+
+        // To check whether a patient is a VIP or not
+        var vipStatus = g_form.getValue('u_vip');
+        var gaPatientUtils = new GlideAjax('global.PatientUtilsClient');
+        gaPatientUtils.addParam('sysparm_name', 'checkIfVIP');
+        gaPatientUtils.addParam('sysparm_vipStatus', vipStatus);
+        gaPatientUtils.getXMLAnswer(checkVip);
+
+        // To fetch patient details by patient Id
+        var patientID = g_form.getValue('u_number');
+        var gaPatientUtils2 = new GlideAjax('global.PatientUtilsClient');
+        gaPatientUtils2.addParam('sysparm_name', 'fetchPatientDetails');
+        gaPatientUtils2.addParam('sysparm_patientID', patientID);
+        gaPatientUtils2.getXMLAnswer(getPatDetails);
+
+    }
+function getPatDetails(patDetails) {
+        var res = JSON.parse(patDetails);
+        if (res.error) {
+            g_form.addErrorMessage(res.error);
+        } else {
+            g_form.addInfoMessage("First Name: " + res.firstName + ", Last Name: " + res.lastName);
+        }
+    }
+
+    function checkVip(vipStatus) {
+        var res1 = JSON.parse(vipStatus);
+        g_form.addInfoMessage(res1);
+    }
+
+}
+
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-13 18:31:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4c4ace90c3b2e25081065205e40131ec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Get Patient Info</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_update_name>sys_script_client_4c4ace90c3b2e25081065205e40131ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-13 19:26:10</sys_updated_on>
+        <table>u_patient</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

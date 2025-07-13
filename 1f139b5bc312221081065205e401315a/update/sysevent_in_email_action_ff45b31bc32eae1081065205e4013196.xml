@@ -18,35 +18,47 @@
 <p>    var patientId &#61; patientIdMatch[1];<br />    var newContactNumber &#61; contactNumberMatch[1];<br />    var newEmail &#61; emailMatch[1];</p>
 <p>    // Fetch patient record<br />    var patientGR &#61; new GlideRecord(&#39;u_patient&#39;);<br />    if (patientGR.get(&#39;number&#39;, patientId)) {<!-- --><br />        patientGR.contact_number &#61; u_contact_number;<br />        patientGR.email &#61; u_email;<br />        patientGR.update();<br />        gs.print(&#34;Inbound Email Action: Patient record updated successfully for Patient ID: &#34; &#43; patientId);<br />    } else {<!-- --><br />        gs.print(&#34;Inbound Email Action: No patient found with ID: &#34; &#43; patientId);<br />    }<br />})();</p>]]></reply_email>
         <required_roles/>
-        <script><![CDATA[(function runInboundEmailAction() {
-    var emailBody = email.body_text;
+        <script><![CDATA[(function runAction(current, event, email, logger, classifier) {
+    try {
+        var emailBody = email.body_text || "";
 
-    // Extract data using RegEx
-    var patientIdMatch = emailBody.match(/Patient ID:\s*(PAT\d+)/i);
-    var contactNumberMatch = emailBody.match(/New Contact Number:\s*(\d+)/i);
-    var emailMatch = emailBody.match(/New Email:\s*([^\s]+)/i); 
+        
+        var patientIdMatch = emailBody.match(/Patient ID:\s*(\w+)/i); // Example: PAT12345
+        var contactNumberMatch = emailBody.match(/New Contact Number:\s*(.+)/i);
+        var newEmailMatch = emailBody.match(/New Email:\s*(.+@.+)/i);
 
-    // Check if all required fields are present
-    if (!patientIdMatch || !contactNumberMatch || !emailMatch) {
-        gs.log("Inbound Email Action: Missing required data in email body.");
-        return;
+        // Validate all fields
+        if (!patientIdMatch || !contactNumberMatch || !newEmailMatch) {
+            gs.error("Missing required fields. Email body:\n" + emailBody);
+            return;
+        }
+
+        var patientId = patientIdMatch[1].trim();
+        var newContactNumber = contactNumberMatch[1].trim();
+        var newEmail = newEmailMatch[1].trim();
+
+        gs.info(" Patient ID: " + patientId);
+        gs.info(" New Contact Number: " + newContactNumber);
+        gs.info("New Email: " + newEmail);
+
+        
+        var patientGR = new GlideRecord('u_patient');
+        patientGR.addQuery('number', patientId); 
+        patientGR.query();
+
+        if (patientGR.next()) {
+            // Update fields
+            patientGR.u_contact_number = newContactNumber;
+            patientGR.u_email = newEmail;
+            patientGR.update();
+            gs.info(" Patient record updated successfully for ID: " + patientId);
+        } else {
+            gs.error( "No patient found with u_number = " + patientId);
+        }
+    } catch (e) {
+        gs.error("Script error: " + e.message + "\n" + e.stack);
     }
-
-    var patientId = patientIdMatch[1];
-    var newContactNumber = contactNumberMatch[1];
-    var newEmail = emailMatch[1];
-
-    // Fetch patient record
-    var patientGR = new GlideRecord('u_patient');
-    if (patientGR.get('number', patientId)) {
-        patientGR.u_contact_number = newContactNumber;
-        patientGR.u_email = newEmail;
-        patientGR.update();
-        gs.log("Inbound Email Action: Patient record updated successfully for Patient ID: " + patientId);
-    } else {
-        gs.log("Inbound Email Action: No patient found with ID: " + patientId);
-    }
-})();]]></script>
+})(null, event, email, logger, classifier);]]></script>
         <stop_processing>false</stop_processing>
         <sys_class_name>sysevent_in_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -54,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ff45b31bc32eae1081065205e4013196</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Update Patient Contact</sys_name>
         <sys_overrides/>
         <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
@@ -62,7 +74,7 @@
         <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
         <sys_update_name>sysevent_in_email_action_ff45b31bc32eae1081065205e4013196</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-11 05:17:36</sys_updated_on>
+        <sys_updated_on>2025-07-13 19:39:28</sys_updated_on>
         <table>u_patient</table>
         <template/>
         <type>reply</type>
