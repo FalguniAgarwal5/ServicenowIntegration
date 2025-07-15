@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" db_object_id="1df68f58c36a261081065205e40131e1" label="Room" max_length="40" name="u_room" type="collection">
+    <element attributes="'audit_type=whitelist'" audit="true" db_object_id="1df68f58c36a261081065205e40131e1" label="Room" max_length="40" name="u_room" type="collection">
         <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="Status" max_length="40" name="u_statu" type="string">
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>

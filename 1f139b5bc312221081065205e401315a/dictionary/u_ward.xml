@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" db_object_id="e8e487d4c36a261081065205e401317f" label="Ward" max_length="40" name="u_ward" type="collection">
+    <element attributes="'audit_type=whitelist'" audit="true" db_object_id="e8e487d4c36a261081065205e401317f" label="Ward" max_length="40" name="u_ward" type="collection">
         <element attributes="audit=true" label="Occupancy" mandatory="true" max_length="40" name="u_occupancy" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Ward Name" mandatory="true" max_length="40" name="u_ward_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Location" mandatory="true" max_length="40" name="u_location" type="string"/>
