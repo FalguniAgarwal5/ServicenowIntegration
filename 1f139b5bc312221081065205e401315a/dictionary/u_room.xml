@@ -10,7 +10,7 @@
         </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Room_ID" max_length="40" name="u_number" type="string"/>
         <element attributes="encode_utf8=false" label="Ward_ID" mandatory="true" max_length="32" name="u_ward_id" reference="u_ward" type="reference"/>
-        <element label="Occupied Beds" mandatory="true" max_length="40" name="u_occupied_beds" type="integer"/>
+        <element attributes="audit=true" label="Occupied Beds" mandatory="true" max_length="40" name="u_occupied_beds" type="integer"/>
         <element label="Bed Count" mandatory="true" max_length="40" name="u_bed_count" type="integer"/>
         <element attributes="edge_encryption_enabled=true" choice="2" dependent="u_ward_id" dependent_on_field="u_ward_id" label="Room Number" mandatory="true" max_length="40" name="u_room_number" type="string" use_dependent_field="true">
             <choice/>

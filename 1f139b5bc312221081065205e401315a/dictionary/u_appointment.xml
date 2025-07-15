@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="2f667254c32a261081065205e4013185" extends="task" label="Appointment" max_length="40" name="u_appointment" type="collection">
         <element attributes="encode_utf8=false" label="Doctor" mandatory="true" max_length="32" name="u_doctor" reference="u_doctor" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Appointment_Date" mandatory="true" max_length="40" name="u_appointment_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true;audit=true" label="Appointment_Date" mandatory="true" max_length="40" name="u_appointment_date" type="glide_date_time"/>
         <element attributes="encode_utf8=false" label="Patient_ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Department" mandatory="true" max_length="40" name="u_department" type="string">
             <choice>
@@ -11,7 +11,7 @@
                 <element inactive_on_update="false" label="ETC" sequence="3" value="etc"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
+        <element attributes="edge_encryption_enabled=true;audit=true" choice="3" default="new" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
             <choice>
                 <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
                 <element inactive_on_update="false" label="Scheduled" sequence="1" value="scheduled"/>

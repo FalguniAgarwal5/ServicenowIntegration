@@ -2,10 +2,10 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="u_appointment_date" table="u_appointment">
         <active>true</active>
         <array>false</array>
-        <attributes>edge_encryption_enabled=true</attributes>
+        <attributes>edge_encryption_enabled=true;audit=true</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Appointment_Date</column_label>
@@ -53,7 +53,7 @@
         <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
         <sys_update_name>sys_dictionary_u_appointment_u_appointment_date</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-01 11:36:02</sys_updated_on>
+        <sys_updated_on>2025-07-15 09:16:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

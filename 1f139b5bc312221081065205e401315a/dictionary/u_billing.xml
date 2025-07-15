@@ -2,8 +2,8 @@
     <element audit="true" db_object_id="6e784fd8c36a261081065205e401319e" extends="task" label="Billing" max_length="40" name="u_billing" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Due Date" max_length="40" name="u_due_date" type="glide_date_time"/>
         <element attributes="encode_utf8=false" label="Patient_ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient" type="reference"/>
-        <element attributes="omit_sys_original=true" label="Total Amount" mandatory="true" max_length="20" name="u_total_amount" type="currency"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
+        <element attributes="omit_sys_original=true; audit=true" label="Total Amount" mandatory="true" max_length="20" name="u_total_amount" type="currency"/>
+        <element attributes="edge_encryption_enabled=true;audit=true" choice="1" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
                 <element inactive_on_update="false" label="Paid" sequence="2" value="paid"/>
