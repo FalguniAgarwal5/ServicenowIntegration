@@ -30,7 +30,7 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	if (current.u_status == "Completed" && previous.u_status != "Completed") {
-    gs.eventQueue("appointment.completed", current, current.sys_id, current.u_patient_id.name);
+    gs.eventQueue("appointment.completed", current, current.email, current.u_patient_id.name);
 }
 
 })(current, previous);]]></script>
@@ -40,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9c2539c3c36a2e1081065205e4013164</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Notify Billing on Completed Appointment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
@@ -48,7 +48,7 @@
         <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
         <sys_update_name>sys_script_9c2539c3c36a2e1081065205e4013164</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-10 10:22:13</sys_updated_on>
+        <sys_updated_on>2025-07-16 10:21:02</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

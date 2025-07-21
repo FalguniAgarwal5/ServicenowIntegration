@@ -4,13 +4,13 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 12:49:58</sys_created_on>
-            <sys_id>a3f3025ec3ae2a1081065205e40131fc</sys_id>
+            <sys_created_on>2025-07-16 10:19:39</sys_created_on>
+            <sys_id>d5e7fb89c3f6e65081065205e4013155</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Process Flow">dc79af90c32e261081065205e401311c</sys_ui_formatter>
             <sys_ui_section caption="Appointment Details" display_value="Appointment Details" name="u_appointment" sys_domain="global" view="Default view">0ea67254c32a261081065205e40131ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 12:49:58</sys_updated_on>
+            <sys_updated_on>2025-07-16 10:19:39</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>number</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 12:49:58</sys_created_on>
-            <sys_id>6bf3025ec3ae2a1081065205e40131fc</sys_id>
+            <sys_created_on>2025-07-16 10:19:39</sys_created_on>
+            <sys_id>55e7fb89c3f6e65081065205e4013156</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Appointment Details" display_value="Appointment Details" name="u_appointment" sys_domain="global" view="Default view">0ea67254c32a261081065205e40131ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 12:49:58</sys_updated_on>
+            <sys_updated_on>2025-07-16 10:19:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_patient_id</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 12:49:58</sys_created_on>
-            <sys_id>eff3025ec3ae2a1081065205e40131fc</sys_id>
+            <sys_created_on>2025-07-16 10:19:39</sys_created_on>
+            <sys_id>d9e7fb89c3f6e65081065205e4013156</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Appointment Details" display_value="Appointment Details" name="u_appointment" sys_domain="global" view="Default view">0ea67254c32a261081065205e40131ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 12:49:58</sys_updated_on>
+            <sys_updated_on>2025-07-16 10:19:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>u_appointment_date</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 12:49:58</sys_created_on>
-            <sys_id>67f3025ec3ae2a1081065205e40131fd</sys_id>
+            <sys_created_on>2025-07-16 10:19:39</sys_created_on>
+            <sys_id>51e7fb89c3f6e65081065205e4013157</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Appointment Details" display_value="Appointment Details" name="u_appointment" sys_domain="global" view="Default view">0ea67254c32a261081065205e40131ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 12:49:58</sys_updated_on>
+            <sys_updated_on>2025-07-16 10:19:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>u_department</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 12:49:58</sys_created_on>
-            <sys_id>ebf3025ec3ae2a1081065205e40131fd</sys_id>
+            <sys_created_on>2025-07-16 10:19:39</sys_created_on>
+            <sys_id>d5e7fb89c3f6e65081065205e4013157</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Appointment Details" display_value="Appointment Details" name="u_appointment" sys_domain="global" view="Default view">0ea67254c32a261081065205e40131ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 12:49:58</sys_updated_on>
+            <sys_updated_on>2025-07-16 10:19:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,27 @@
             <element>priority</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-07 12:49:58</sys_created_on>
-            <sys_id>63f3025ec3ae2a1081065205e40131fe</sys_id>
+            <sys_created_on>2025-07-16 10:19:39</sys_created_on>
+            <sys_id>5de7fb89c3f6e65081065205e4013157</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Appointment Details" display_value="Appointment Details" name="u_appointment" sys_domain="global" view="Default view">0ea67254c32a261081065205e40131ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-07 12:49:58</sys_updated_on>
+            <sys_updated_on>2025-07-16 10:19:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to.email</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-16 10:19:39</sys_created_on>
+            <sys_id>d1e7fb89c3f6e65081065205e4013158</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Appointment Details" display_value="Appointment Details" name="u_appointment" sys_domain="global" view="Default view">0ea67254c32a261081065205e40131ab</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-16 10:19:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

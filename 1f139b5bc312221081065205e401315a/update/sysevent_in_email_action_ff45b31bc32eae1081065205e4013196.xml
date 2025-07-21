@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
     <sysevent_in_email_action action="INSERT_OR_UPDATE">
         <action>record_action</action>
-        <active>false</active>
+        <active>true</active>
         <assignment_operator/>
         <condition_script/>
         <description/>
@@ -66,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ff45b31bc32eae1081065205e4013196</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Update Patient Contact</sys_name>
         <sys_overrides/>
         <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
@@ -74,7 +74,7 @@
         <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
         <sys_update_name>sysevent_in_email_action_ff45b31bc32eae1081065205e4013196</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-13 19:39:28</sys_updated_on>
+        <sys_updated_on>2025-07-16 09:57:17</sys_updated_on>
         <table>u_patient</table>
         <template/>
         <type>reply</type>
