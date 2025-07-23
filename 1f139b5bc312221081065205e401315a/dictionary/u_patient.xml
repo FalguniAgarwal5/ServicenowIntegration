@@ -12,6 +12,7 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Last_Name" mandatory="true" max_length="40" name="u_last_name" type="string"/>
         <element label="Contact_Number" max_length="40" name="u_contact_number" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="Visit Date" max_length="40" name="u_visit_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" mandatory="true" max_length="40" name="u_gender" type="string">
             <choice>
                 <element inactive_on_update="false" label="Male" sequence="0" value="male"/>

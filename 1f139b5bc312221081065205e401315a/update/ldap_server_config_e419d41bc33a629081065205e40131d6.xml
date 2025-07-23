@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ldap_server_config">
+    <ldap_server_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <attributes/>
+        <authenticate>true</authenticate>
+        <connect_timeout>10</connect_timeout>
+        <dn> cn=read-only-admin,dc=example,dc=com </dn>
+        <dn_field/>
+        <listen_interval>5</listen_interval>
+        <listener>true</listener>
+        <map/>
+        <mid_server/>
+        <name>Demo</name>
+        <paging>true</paging>
+        <password>﷞﷟﷒b746f34fc376629081065205e401312c﷬﷔1﷬﷭TI_WFvFpFtE0pet_lfssyg==16-KP2LPVyP_EExfraFOhb_se-EwsEi5﷮﷯</password>
+        <rdn>dc=example,dc=com </rdn>
+        <read_timeout>30</read_timeout>
+        <server_url>ldap://ldap.forumsys.com</server_url>
+        <ssl>false</ssl>
+        <sys_class_name>ldap_server_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-22 18:00:08</sys_created_on>
+        <sys_id>e419d41bc33a629081065205e40131d6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Demo</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_update_name>ldap_server_config_e419d41bc33a629081065205e40131d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-22 18:02:12</sys_updated_on>
+        <system_id>app130049.ord191.service-now.com:dev183344003</system_id>
+        <vendor>active_directory</vendor>
+    </ldap_server_config>
+</record_update>

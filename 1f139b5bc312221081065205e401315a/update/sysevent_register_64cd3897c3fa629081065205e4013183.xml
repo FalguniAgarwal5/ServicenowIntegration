@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description>Reminds patient to take prescribed medication</description>
+        <event_name>medication.remainder.patient</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix/>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-22 20:34:13</sys_created_on>
+        <sys_id>64cd3897c3fa629081065205e4013183</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>medication.remainder.patient</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_update_name>sysevent_register_64cd3897c3fa629081065205e4013183</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-22 20:34:13</sys_updated_on>
+        <table>u_medication</table>
+    </sysevent_register>
+</record_update>
