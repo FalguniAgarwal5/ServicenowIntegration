@@ -10,6 +10,12 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Medication_Name" mandatory="true" max_length="40" name="u_medication_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="End_Date" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Schedule Time" max_length="40" name="u_schedule_time" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Now" sequence="0" value="now"/>
+                <element inactive_on_update="false" label="Later" sequence="1" value="later"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Frequency" max_length="40" name="u_freq" type="string">
             <choice>
                 <element inactive_on_update="false" label="Twice Daily" sequence="1" value="2"/>
@@ -20,6 +26,7 @@
         </element>
         <element attributes="encode_utf8=false" label="Prescribing Doctor" mandatory="true" max_length="32" name="u_prescribing_doctor" reference="u_doctor" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Dosage" mandatory="true" max_length="1000" name="u_dosage" type="string"/>
+        <element label="Reminder Set" max_length="40" name="u_reminder_set" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_1" type="string">
             <choice>
                 <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
