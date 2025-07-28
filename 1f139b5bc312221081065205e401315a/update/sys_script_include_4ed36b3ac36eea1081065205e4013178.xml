@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.AppointmentUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AppointmentUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AppointmentUtils = Class.create();
+AppointmentUtils.prototype = {
+    initialize: function() {
+    },
+   // a. Fetch all appointments for a specific patient
+    getAppointmentsByPatient: function(patientId) {
+        var result = [];
+        var apptGR = new GlideRecord('u_appointment'); // Replace with your actual appointment table name
+        apptGR.addQuery('u_patient_id', patientId); // 'patient' should be a reference field to the patient table
+        apptGR.query();
+
+        while (apptGR.next()) {
+            result.push({
+                appointment_id: apptGR.getUniqueValue(),
+                date: apptGR.getDisplayValue('u_appointment_date'), 
+                doctor: apptGR.getDisplayValue('u_doctor'),          
+                status: apptGR.getDisplayValue('u_status')           
+            });
+        }
+
+        return result;
+    },
+
+    isAppointmentConfirmed: function(appointmentId) {
+    var apptGR = new GlideRecord('u_appointment'); 
+    apptGR.addQuery('number', appointmentId); 
+    apptGR.query();
+
+    if (apptGR.next()) {
+        
+        var status = apptGR.getValue('u_status');
+        return status == 'confirmed' || status == 'Confirmed';
+    }
+
+    return false; 
+},
+
+getAppointmentDetails: function(appointmentId) {
+    var apptGR = new GlideRecord('u_appointment'); 
+    apptGR.addQuery('number', appointmentId); 
+    apptGR.query();
+
+    if (apptGR.next()) {
+        return {
+            appointment_id: apptGR.getUniqueValue(),
+            patient: apptGR.getDisplayValue('u_patient_id'),              
+            doctor: apptGR.getDisplayValue('u_doctor'),                
+            date: apptGR.getDisplayValue('u_appointment_date'),     
+            status: apptGR.getDisplayValue('u_status'),                
+        };
+    }
+
+    return null; 
+},
+getAppointmentsByDate: function(dateStr) {
+    var result = [];
+    var apptGR = new GlideRecord('u_appointment'); 
+
+    
+    apptGR.addQuery('u_appointment_date', 'STARTSWITH', dateStr); 
+    apptGR.query();
+
+    while (apptGR.next()) {
+        result.push({
+            appointment_id: apptGR.getUniqueValue(),
+            patient: apptGR.getDisplayValue('u_patient_id'),         
+            doctor: apptGR.getDisplayValue('u_doctor'),           
+            date: apptGR.getDisplayValue('u_appointment_date'),   
+            status: apptGR.getDisplayValue('u_status')            
+        });
+    }
+
+    return result;
+},
+getAppointmentsByDepartment: function(departmentId) {
+    var result = [];
+    var apptGR = new GlideRecord('u_appointment'); 
+
+    apptGR.addQuery('u_department', departmentId); 
+    apptGR.query();
+
+    while (apptGR.next()) {
+        result.push({
+            appointment_id: apptGR.getUniqueValue(),
+            patient: apptGR.getDisplayValue('u_patient_id'),
+            doctor: apptGR.getDisplayValue('u_doctor'),
+            department: apptGR.getDisplayValue('u_department'),
+            date: apptGR.getDisplayValue('u_appointment_date'),
+            status: apptGR.getDisplayValue('u_status')
+        });
+    }
+
+    return result;
+},
+
+
+    type: 'AppointmentUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 09:41:41</sys_created_on>
+        <sys_id>4ed36b3ac36eea1081065205e4013178</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>AppointmentUtils</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_update_name>sys_script_include_4ed36b3ac36eea1081065205e4013178</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 10:03:09</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4ed36b3ac36eea1081065205e4013178</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-09 09:41:41</sys_created_on>
+        <sys_id>741cab32c3aeea1081065205e40131ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 09:41:41</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

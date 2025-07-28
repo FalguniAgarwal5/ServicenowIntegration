@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.PatientUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>PatientUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var PatientUtils = Class.create();
+PatientUtils.prototype = {
+    initialize: function() {
+    },
+    allpatientDetails: function(patientID){
+		var patientGR = new GlideRecord('u_patient');
+		patientGR.addQuery('number', patientID);
+        patientGR.query();
+
+        if (patientGR.next()) {
+			var first_name = patientGR.u_first_name;
+			
+            return first_name; 
+		}
+		
+		
+	},
+
+	// b. check if a patient is a VIP
+	isVIP: function(patientID){
+		var patientGR = new GlideRecord('u_patient');
+		patientGR.addQuery('number', patientID); 
+    patientGR.query();
+
+    if (patientGR.next()) {
+        var vipValue = patientGR.getValue('u_vip');
+        return vipValue == 'true' || vipValue == true;
+	
+		}
+		return false;
+	},
+calculateAge: function(patientId) {
+    var patientGR = new GlideRecord('u_patient'); 
+    patientGR.addQuery('number', patientId); 
+    patientGR.query();
+
+    if (patientGR.next()) {
+        
+        var dobStr = patientGR.getValue('u_date_birth');
+        if (!dobStr) {
+            return -1; 
+        }
+
+        var dob = new GlideDateTime(dobStr);
+        var today = new GlideDateTime();
+
+        var dobDate = new GlideDate(dob.getDate());
+        var todayDate = new GlideDate(today.getDate());
+
+        var dobYear = parseInt(dobDate.getByFormat('yyyy'), 10);
+        var dobMonth = parseInt(dobDate.getByFormat('MM'), 10);
+        var dobDay = parseInt(dobDate.getByFormat('dd'), 10);
+
+        var todayYear = parseInt(todayDate.getByFormat('yyyy'), 10);
+        var todayMonth = parseInt(todayDate.getByFormat('MM'), 10);
+        var todayDay = parseInt(todayDate.getByFormat('dd'), 10);
+
+        var age = todayYear - dobYear;
+
+    
+        if (todayMonth < dobMonth || (todayMonth === dobMonth && todayDay < dobDay)) {
+            age--;
+        }
+
+        return age;
+    }
+
+    return -1; 
+},
+
+getAppointments: function(patientId) {
+    var result = [];
+    var apptGR = new GlideRecord('u_appointment'); 
+    apptGR.addQuery('u_patient_id', patientId);
+    apptGR.query();
+
+    while (apptGR.next()) {
+        
+        result.push({
+            appointment_id: apptGR.getUniqueValue(),
+            date: apptGR.getDisplayValue('u_appointment_date'),
+            doctor: apptGR.getDisplayValue('u_doctor'),          
+            status: apptGR.getDisplayValue('u_status')           
+        });
+    }
+
+    return result; 
+},
+getMedications: function(patientId) {
+    var result = [];
+    var medGR = new GlideRecord('u_medication'); 
+    medGR.addQuery('u_patient_id', patientId);
+    medGR.query();
+
+    while (medGR.next()) {
+        result.push({
+            medication_id: medGR.getUniqueValue(), 
+            name: medGR.getDisplayValue('u_medication_name'), 
+            dosage: medGR.getDisplayValue('u_dosage'), 
+            frequency: medGR.getDisplayValue('u_frequency'), 
+            start_date: medGR.getDisplayValue('u_start_date'), 
+			end_date: medGR.getDisplayValue('u_end_date')      
+        });
+    }
+
+    return result; 
+},
+getLabTests: function(patientId) {
+    var result = [];
+    var labGR = new GlideRecord('u_lab_test'); 
+    labGR.addQuery('u_patient_id', patientId); 
+    labGR.query();
+
+    while (labGR.next()) {
+        result.push({
+            lab_test_id: labGR.getUniqueValue(), 
+            test_type: labGR.getDisplayValue('u_test_type'), 
+            result: labGR.getDisplayValue('u_result'),       
+            status: labGR.getDisplayValue('u_status'),       
+            date: labGR.getDisplayValue('u_scheduled_date')       
+        });
+    }
+
+    return result;
+},
+getBillingRecords: function(patientId) {
+    var result = [];
+    var billingGR = new GlideRecord('u_billing'); // Replace with your actual billing table name
+    billingGR.addQuery('u_patient_id', patientId); // 'patient' should be the reference field to the patient
+    billingGR.query();
+
+    while (billingGR.next()) {
+        result.push({
+            billing_id: billingGR.getUniqueValue(), 
+            amount: billingGR.getDisplayValue('u_total_amount'),                 
+            status: billingGR.getDisplayValue('u_status'),                 
+        });
+    }
+
+    return result;
+},
+getInsurancePolicies: function(patientId) {
+    var result = [];
+    var insuranceGR = new GlideRecord('u_insurance'); 
+    insuranceGR.addQuery('u_patient_id', patientId); 
+    insuranceGR.query();
+
+    while (insuranceGR.next()) {
+        result.push({
+            insurance_id: insuranceGR.getUniqueValue(), 
+            policy_number: insuranceGR.getDisplayValue('u_policy_number'),   
+            provider: insuranceGR.getDisplayValue('u_provider'),             
+            coverage_details: insuranceGR.getDisplayValue('u_coverage_details'),   
+        });
+    }
+
+    return result;
+},
+ type: 'PatientUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 12:07:08</sys_created_on>
+        <sys_id>3b3eb2e2c3e6aa1081065205e40131ab</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>PatientUtils</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_update_name>sys_script_include_3b3eb2e2c3e6aa1081065205e40131ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-09 16:41:16</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3b3eb2e2c3e6aa1081065205e40131ab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 12:07:08</sys_created_on>
+        <sys_id>b9c387a6c3e6aa1081065205e4013131</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 12:07:08</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

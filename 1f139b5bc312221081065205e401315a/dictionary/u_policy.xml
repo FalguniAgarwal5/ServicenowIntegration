@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3d8a6e22c366aa1081065205e401317a" label="Policy" max_length="40" name="u_policy" type="collection">
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Policy" max_length="1024" name="u_policy" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="u_discription" type="string"/>
+    </element>
+</database>

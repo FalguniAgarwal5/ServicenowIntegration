@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-30 06:34:55</sys_created_on>
+        <sys_id>590ba408c3eaa21081065205e4013191</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_issues.u_issues_user</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_security_acl display_value="u_issues">d10ba408c3eaa21081065205e401318e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_590ba408c3eaa21081065205e4013191</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-30 06:34:55</sys_updated_on>
+        <sys_user_role display_value="u_issues_user" name="u_issues_user">010bec80c326a21081065205e401312b</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

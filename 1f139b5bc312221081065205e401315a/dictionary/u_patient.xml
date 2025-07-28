@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="'audit_type=whitelist'" audit="true" db_object_id="64391753c352221081065205e401315c" extends="task" label="Patient" max_length="40" name="u_patient" type="collection">
+        <element label="Emergency_Contact" max_length="40" name="u_emergency_contact" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="Address" mandatory="true" max_length="1000" name="u_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Work_Notes" max_length="4000" name="u_work_notes" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="true" label="Active" max_length="40" name="u_active" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="0" value="Choice 3"/>
+                <element inactive_on_update="false" label="False" sequence="1" value="false"/>
+                <element inactive_on_update="false" label="True" sequence="0" value="true"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Last_Name" mandatory="true" max_length="40" name="u_last_name" type="string"/>
+        <element label="Contact_Number" max_length="40" name="u_contact_number" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="Visit Date" max_length="40" name="u_visit_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" mandatory="true" max_length="40" name="u_gender" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+                <element inactive_on_update="false" label="Female" sequence="1" value="female"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Female" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Male" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true;audit=true" choice="3" default="new" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in progress"/>
+                <element inactive_on_update="false" label="Discharged" sequence="3" value="discharged"/>
+                <element inactive_on_update="false" label="Under Treatment" sequence="2" value="under treatment"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+            </choice>
+        </element>
+        <element label="VIP" max_length="40" name="u_vip" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" mandatory="true" max_length="40" name="u_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date_Of_Birth" mandatory="true" max_length="40" name="u_date_birth" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="First_Name" mandatory="true" max_length="40" name="u_first_name" type="string"/>
+    </element>
+</database>

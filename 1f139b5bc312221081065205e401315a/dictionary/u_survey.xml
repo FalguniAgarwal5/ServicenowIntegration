@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="57e977abc37ee29081065205e4013115" label="Survey " max_length="40" name="u_survey" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Submitted On" max_length="40" name="u_submitted_on" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Patient_ID" max_length="32" name="u_patient_id" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Survey_ID" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Comment" max_length="40" name="u_comment" type="string"/>
+        <element attributes="encode_utf8=false" label="Appointment_ID" max_length="32" name="u_appointment_id" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Rating" max_length="40" name="u_rating" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Good" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="OK-OK" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Bad" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_appointment_id"/>
+        </index>
+        <index name="index2">
+            <element name="u_patient_id"/>
+        </index>
+    </element>
+</database>

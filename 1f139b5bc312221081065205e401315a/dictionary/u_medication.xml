@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="d31bf698c32a261081065205e4013163" extends="task" label="Medication" max_length="40" name="u_medication" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Prescribed" sequence="1" value="prescribed"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in progress"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Medication_Name" mandatory="true" max_length="40" name="u_medication_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End_Date" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Schedule Time" max_length="40" name="u_schedule_time" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Now" sequence="0" value="now"/>
+                <element inactive_on_update="false" label="Later" sequence="1" value="later"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Frequency" max_length="40" name="u_freq" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Twice Daily" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Thrice Daily" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="ETC" sequence="3" value="etc"/>
+                <element inactive_on_update="false" label="Once Daily" sequence="0" value="1"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Prescribing Doctor" mandatory="true" max_length="32" name="u_prescribing_doctor" reference="u_doctor" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Dosage" mandatory="true" max_length="1000" name="u_dosage" type="string"/>
+        <element label="Reminder Set" max_length="40" name="u_reminder_set" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Patient_ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Start_Date" mandatory="true" max_length="40" name="u_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="once daily" label="Frequency" mandatory="true" max_length="40" name="u_frequency" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Thrice Daily" sequence="2" value="thrice daily"/>
+                <element inactive_on_update="false" label="Once Daily" sequence="0" value="once daily"/>
+                <element inactive_on_update="false" label="Twice Daily" sequence="1" value="twice daily"/>
+                <element inactive_on_update="false" label="ETC" sequence="3" value="etc"/>
+            </choice>
+        </element>
+        <element label="Total_Dosage" max_length="40" name="u_total_dosage" type="integer"/>
+    </element>
+</database>

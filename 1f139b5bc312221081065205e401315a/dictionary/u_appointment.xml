@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="'audit_type=whitelist'" audit="true" db_object_id="2f667254c32a261081065205e4013185" extends="task" label="Appointment" max_length="40" name="u_appointment" type="collection">
+        <element label="check In" max_length="40" name="u_check_in" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Doctor" mandatory="true" max_length="32" name="u_doctor" reference="u_doctor" type="reference"/>
+        <element attributes="edge_encryption_enabled=true;audit=true" label="Appointment_Date" mandatory="true" max_length="40" name="u_appointment_date" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Patient_ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Department" mandatory="true" max_length="40" name="u_department" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pediatrics" sequence="2" value="pediatrics"/>
+                <element inactive_on_update="false" label="General Medicine" sequence="0" value="general medicine"/>
+                <element inactive_on_update="false" label="Cardiology" sequence="1" value="cardiology"/>
+                <element inactive_on_update="false" label="ETC" sequence="3" value="etc"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true;audit=true" choice="3" default="new" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="1" value="scheduled"/>
+                <element inactive_on_update="false" label="Confirmed" sequence="2" value="confirmed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="Check In" sequence="6" value="check in"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="In Progress" sequence="7" value="in progress"/>
+                <element inactive_on_update="false" label="NO Show" sequence="5" value="no show"/>
+            </choice>
+        </element>
+    </element>
+</database>
