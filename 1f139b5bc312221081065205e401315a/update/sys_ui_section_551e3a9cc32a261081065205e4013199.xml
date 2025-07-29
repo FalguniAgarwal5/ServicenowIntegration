@@ -1,33 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Notes" section_id="551e3a9cc32a261081065205e4013199" sys_domain="global" table="u_medication" version="3" view="">
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>work_notes</element>
-            <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 11:55:56</sys_created_on>
-            <sys_id>9d1e7a9cc32a261081065205e4013129</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Notes" display_value="Notes" name="u_medication" sys_domain="global" view="Default view">551e3a9cc32a261081065205e4013199</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 11:55:56</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>activity.xml</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-07-01 11:55:56</sys_created_on>
-            <sys_id>151e7a9cc32a261081065205e401312a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
-            <sys_ui_section caption="Notes" display_value="Notes" name="u_medication" sys_domain="global" view="Default view">551e3a9cc32a261081065205e4013199</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-07-01 11:55:56</sys_updated_on>
-            <sys_user/>
-            <type>formatter</type>
-        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Notes</caption>
             <header>false</header>

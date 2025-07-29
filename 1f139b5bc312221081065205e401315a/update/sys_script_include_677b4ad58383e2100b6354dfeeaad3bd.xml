@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.InsuranceUtils2</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>InsuranceUtils2</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var InsuranceUtils2 = Class.create();
+InsuranceUtils2.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+
+    getInsuranceDetails: function() {
+        var policyNum = this.getParameter('sysparm_policy_number');
+        
+        var gr = new GlideRecord('u_insurance'); 
+        gr.addQuery('u_policy_number', policyNum); 
+        gr.query();
+
+        if (gr.next()) {
+            return 'Provider: ' + gr.getValue('u_provider') + 
+                   ' | Coverage: ' + gr.getValue('u_coverage_details');
+        }
+
+        return 'No insurance record found for this policy number.';
+    }
+
+});
+    type: 'InsuranceUtils2'
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-29 07:37:31</sys_created_on>
+        <sys_id>677b4ad58383e2100b6354dfeeaad3bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>InsuranceUtils2</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="1f139b5bc312221081065205e401315a">1f139b5bc312221081065205e401315a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">1f139b5bc312221081065205e401315a</sys_scope>
+        <sys_update_name>sys_script_include_677b4ad58383e2100b6354dfeeaad3bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-29 07:37:31</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>677b4ad58383e2100b6354dfeeaad3bd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-29 07:37:31</sys_created_on>
+        <sys_id>8d7f86158383e2100b6354dfeeaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-29 07:37:31</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
